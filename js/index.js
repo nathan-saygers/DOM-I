@@ -53,6 +53,14 @@ navLinks.forEach(element => {
   element.style.color = 'green';
 });
 
+const additionalNavItem = document.createElement('a');
+additionalNavItem.textContent = 'BeginWrap';
+document.querySelector('nav').prepend(additionalNavItem);
+
+const additionalNavItem2 = document.createElement('a');
+additionalNavItem2.textContent = 'EndWrap';
+document.querySelector('nav').append(additionalNavItem2);
+
 console.log(navLinks);
 // CTA //
 
@@ -85,6 +93,7 @@ const middleImg = document.querySelector('.middle-img').src='img/mid-page-accent
 
 // Contact //
 mainH4s[5].textContent = 'Contact';
+
 mainPs[5].textContent = '123 Way 456 Street Somewhere, USA';
 mainPs[6].textContent = '1 (888) 888-8888';
 mainPs[7].textContent = 'sales@greatidea.io';
