@@ -55,10 +55,12 @@ navLinks.forEach(element => {
 
 const additionalNavItem = document.createElement('a');
 additionalNavItem.textContent = 'BeginWrap';
+additionalNavItem.style.color = 'green';
 document.querySelector('nav').prepend(additionalNavItem);
 
 const additionalNavItem2 = document.createElement('a');
 additionalNavItem2.textContent = 'EndWrap';
+additionalNavItem2.style.color = 'green';
 document.querySelector('nav').append(additionalNavItem2);
 
 console.log(navLinks);
